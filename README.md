@@ -40,7 +40,7 @@ pip install keras tensorflow lime
 ## Running the script
 Basic command line usage:
 ```sh
-python Result.py [--m model] [--t text]
+python result.py [--m model] [--t text]
 ```
 
 - `--m` or `--model`: Specifies the path to the model file (required).
@@ -50,13 +50,13 @@ python Result.py [--m model] [--t text]
 
 This information are also available throw the coomand line options:
 ```sh
-python Result.py --h
+python result.py --h
 ```
 
 ## Example Usage
 Here’s an example of how to run the script:
 ```sh
-python Result.py --m my_model.keras --t "This movie was fantastic!" --f 3 --o result.html
+python result.py --m my_model.keras --t "This movie was fantastic!" --f 3 --o result.html
 ```
 
 This command will:
