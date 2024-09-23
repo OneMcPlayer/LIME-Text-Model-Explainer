@@ -48,7 +48,7 @@ python Result.py [--m model] [--t text]
 - `--f` or `--feat`: Number of features to display with LIME (optional, default: 10).
 - `--o` or `--output`: Name of the output file (optional, default: "output.html").
 
-This information are also available throw the coomand line options:
+This information is also available through the command line options
 ```sh
 python Result.py --h
 ```
