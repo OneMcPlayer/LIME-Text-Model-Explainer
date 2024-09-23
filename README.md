@@ -14,7 +14,7 @@ This Python script is usefull to test and try to explain the predictions of diff
 | 🔍 Explain model result with LIME | ✅ |
 | 🛠 Customize the output file name | ✅ |
 | 🛠 Adjust the number of features to display with LIME | ✅ |
-| ☕ Make a cup of coffie | ❌ |
+| ☕ Make a cup of coffee | ❌ |
 
 ## Screenshots
 Below are some screenshots of the script output. These are generated in html.
