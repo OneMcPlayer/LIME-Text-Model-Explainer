@@ -67,7 +67,7 @@ This command will:
 
 ## How it Works
 The script utilizes the **LIME** framework to explain the model's predictions:
-1. It takes a pre-trained model (e.g., Keras) and a text input (a movie review).
+1. It takes a pre-trained model (Keras) and a text input (a movie review).
 2. LIME generates explanations by perturbing the input text and observing how the model’s predictions change.
 3. The results are saved as an HTML file for easy visualization of the important features influencing the prediction.
 
