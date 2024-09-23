@@ -7,12 +7,26 @@ parser = argparse.ArgumentParser(
 
 parser.add_argument('--m', '--model', dest='model_file', required = True,
                     help='The name of the model to use')
+parser.add_argument('--f', '--feat', dest='feat_number', required = False, type = int,
+                    help='The number of feature to display with LIME (Default: 10)')
 parser.add_argument('--o', '--output', dest='output_file', required = False,
                     help='The name of the output file to use')
 parser.add_argument('--t', '--text', dest='text_input', required = True,
                     help='The text input to be used')
 
 args = parser.parse_args()
+
+# Controlli sugli argomenti facoltativi
+if(args.feat_number == None):
+  feat_number = 10
+else:
+  feat_number = args.feat_number
+
+
+if(args.output_file == None):
+  outputFileName = "output.html"
+else:
+  outputFileName = args.output_file
 
 # Carico il modello
 import keras
@@ -118,13 +132,7 @@ from keras import preprocessing
 
 maxlen = 100
 
-exp = explainer.explain_instance(args.text_input, predict_fn, num_features=10, labels=[0])
-
-if(args.output_file == None):
-  outputFileName = "output.html"
-else:
-  outputFileName = args.output_file
-
+exp = explainer.explain_instance(args.text_input, predict_fn, num_features=feat_number, labels=[0])
 
 # Write the output file
 from pathlib import Path
