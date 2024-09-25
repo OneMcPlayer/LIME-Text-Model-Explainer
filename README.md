@@ -30,7 +30,7 @@ The script depends on the following libraries:
 - Keras
 - LIME
 
-You can install these dependencies via [PyPI](https://pypi.python.org/pypi/lime) by running:
+You can install these dependencies via [PyPI](https://pypi.org/) by running:
 
 ```sh
 pip install --upgrade pip
