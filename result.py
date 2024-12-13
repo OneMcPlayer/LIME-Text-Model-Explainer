@@ -105,7 +105,7 @@ custom_vectorizer = CustomVectorizer(word_index=word_index)
 # Create a pipeline with the custom vectorizer and your model
 pipeline = make_pipeline(custom_vectorizer, model)
 
-class_names = ['Negative', 'Positive']
+class_names = ['Positive', 'Negative']
 # Create a LIME explainer
 explainer = LimeTextExplainer(class_names=class_names)
 
